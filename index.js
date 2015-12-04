@@ -26,6 +26,6 @@ module.exports = function(content) {
 	if (query.emitFile !== false) {
 		this.emitFile(url, content);
 	}
-	return "module.exports = __webpack_public_path__ + " + publicPath + ";";
+	return "module.exports = " + publicPath + ";";
 }
 module.exports.raw = true;
